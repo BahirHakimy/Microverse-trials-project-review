@@ -1,0 +1,201 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#welcome-section {
+  height:100vh; 
+  padding: auto;
+  padding-top: 7em;    
+  text-align: center;
+  text-shadow: .1rem .1rem .2rem #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+  background: radial-gradient(#25b0f1a9,#1187e7d3  , #1d2571a9);
+  color:aliceblue;
+}
+#navbar {
+  position:fixed;
+  background-image: linear-gradient(to bottom,#121414 , #185b9d1c);
+    width: 100%;
+    height: 2.5em;
+    text-align: end;
+    padding: 0.4em;
+    font-size: 1em;
+
+
+}
+#navbar>a {
+    padding: 1em;
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+}
+#navbar>a:visited {
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+}
+#navbar>a:hover {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+#diff {
+    background: linear-gradient(to bottom,#1d2571b4,#2193b0c2 );
+    height:0.2em;
+    width: 100%;
+}
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg,#2193b0 , #6dd5ed);
+    padding: 5rem 0;
+}
+#project-title{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: bolder;
+    color: white;
+    text-decoration: underline;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    margin: 3rem;
+    text-shadow: .1rem .1rem .2rem black;
+}
+
+.project-tile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 1rem;
+    background: linear-gradient(180deg,#2193b0 , #6dd5ed);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 25rem;
+    min-width: fit-content;
+}
+.project-tile h1{
+    color: #222;
+    margin-bottom: 1rem;
+}
+.project-tile img{
+    border-radius: 1rem;
+    width: 23rem;
+    height: auto;
+}
+.project-tile a{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #222;
+    font-weight: bold;
+   
+}
+.project-tile a:hover{
+    color: #444;
+}
+
+#contact{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(30, 43, 82);
+    color: white;
+}
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#links a{
+    margin: .5rem 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: white;
+}
+#facebook{
+    background-color: rgb(12, 64, 235);
+}
+#profile-link{
+    background-color: black;
+}
+#twitter{
+    background-color: rgb(0, 102, 255);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+     width:100%;
+    } 
+ }
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+     #contact{
+      height: 15vh !important;
+     }
+     #welcome-section {
+         
+         font-size:large;
+           }
+     
+ }
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+     .project-tile{
+         width: 90% !important;
+     }
+     #contact{
+         height: 30vh !important;
+        }
+        #welcome-section {
+         
+         font-size:larger;
+           }
+ }
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+     .project-tile{
+         width: fit-content !important;
+     }
+     #welcome-section {
+         
+         font-size:x-large;
+           }
+ }
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+     .project-tile{
+         width: fit-content !important;
+     }
+     #welcome-section {
+         
+   font-size:xx-large;
+     }
+ }
+ @media only screen and (min-width: 1400px) {
+     #projects{
+         padding: 5rem 20rem !important;
+     }
+     .project-tile{
+         width: fit-content !important;
+     }
+ }
